@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Sidebar from './Layout/Sidebar'
+// import Navbar from "./Layout/NavBar";
+import { BiCategory } from "react-icons/bi";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SLearn React
-        </a>
-      </header>
+      <div className="flex flex-row h-screen flex-wrap">
+        <div className=" w-16">
+        <Sidebar data={[{id:0 , Name:"Dashboard",Icon:    <BiCategory className="text-3xl m-auto" />}]}/>
+        </div>
+        <div className=" flex-auto flex flex-col">
+          <div className="h-16 bg-gray-300">
+
+          </div>
+          <div  className="flex-auto bg-gray-400 ">
+
+          </div>
+        </div>
+      </div>
+      {/* <Navbar /> */}
+      {/* <Sidebar data={[{id:0 , Name:"Dashboard",Icon:    <BiCategory className="text-3xl m-auto" />}]}/> */}
     </div>
   );
 }
