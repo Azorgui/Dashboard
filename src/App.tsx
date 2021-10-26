@@ -11,7 +11,7 @@ function App() {
         </div>
         <div className=" flex-auto flex flex-col">
           <div className="h-16 bg-gray-300">
-qshgqjdshfdhgqfshgdfhsq
+qshgqjdshfdhgq
           </div>
           <div  className="flex-auto bg-gray-400 ">
 
